@@ -42,7 +42,7 @@ fetch("https://api.github.com/users/JehadAbdou/repos")
             <div class="innre-card">
               
               <h2>${repo.name}</h2>
-              <a href="${repo.url}"
+              <a href="${repo.html_url}"
               ><i class="bx bxl-github"></i
                 ></a>
                 
