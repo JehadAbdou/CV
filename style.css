@@ -445,6 +445,7 @@ body {
   gap: 100px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 200px;
+  background: #081b29;
 }
 .projects h1 {
   position: relative;
@@ -457,6 +458,7 @@ body {
   border: #00abf0 2px solid;
   width: 300px;
   height: 200px;
+  background: #081b29;
   position: relative;
   transform-style: preserve-3d;
   border-radius: 18px;
@@ -475,18 +477,9 @@ body {
   margin-left: 30%;
   margin-top: 25px;
 }
-.rgp ::after {
-  content: "";
-  background: linear-gradient(
-    45deg,
-    #ff0000 0%,
-    #ff9a00 10%,
-    #d0de21 20%,
-    #4fdc4a 30%
-  );
-}
+
 .innre-card {
-  transform: translateZ(30px);
+  transform: translateZ(50px);
   align-items: center;
   text-align: center;
   display: grid;
@@ -499,5 +492,17 @@ body {
 @keyframes showRight {
   100% {
     width: 0;
+  }
+}
+
+@keyframes rgp {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

@@ -38,7 +38,7 @@ fetch("https://api.github.com/users/JehadAbdou/repos")
   .then((data) =>
     data.map((repo) => {
       const li = document.createElement("li");
-      li.innerHTML = `<div class="card">
+      li.innerHTML = `<div class="rgp card ">
             <div class="innre-card">
               
               <h2>${repo.name}</h2>
@@ -53,7 +53,9 @@ fetch("https://api.github.com/users/JehadAbdou/repos")
       VanillaTilt.init(document.querySelectorAll(".card"), {
         glare: true,
         reverse: true,
-        "max-glare": 0.5,
+        scale: 1.2,
+        "max-glare": 0.7,
+        max: 60,
       });
     })
   );
