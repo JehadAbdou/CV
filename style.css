@@ -3,6 +3,9 @@ html {
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+li {
+  list-style: none;
+}
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -439,6 +442,7 @@ body {
 .cards {
   margin-left: 200px;
   display: grid;
+  gap: 100px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 200px;
 }
