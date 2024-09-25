@@ -65,9 +65,7 @@ body {
 
 .home {
   display: flex;
-  background: url("Jehad2-Photoroom.png") no-repeat;
-  background-size: contain;
-  background-position: center;
+
   height: 100vh;
   align-items: center;
   padding: 0 10%;
@@ -261,8 +259,8 @@ body {
 .home-imgHover {
   position: absolute;
   top: 0;
-  left: 570px;
-  width: 700px;
+  left: 660px;
+  width: 800px;
   height: 100%;
   background: transparent;
   transition: 3s;
@@ -281,6 +279,22 @@ body {
   z-index: 2;
 }
 
+.home-imgHover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: url("Jehad2-Photoroom.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+}
+.home-imgHover:hover:before {
+  filter: grayscale(100%);
+}
 .erfarenhet {
   display: grid;
   grid-template-rows: repeat(4, 70px);
@@ -401,7 +415,7 @@ body {
   width: 100%;
   height: 100%;
   background: #081b29;
-  border: red 2px solid;
+
   z-index: -1;
   transition: 0.5s;
   animation: showRight 1s ease forwards;
@@ -411,6 +425,9 @@ body {
   position: relative;
   font-size: 25px;
   margin-bottom: 50px;
+  -webkit-text-stroke: 1px #ededed;
+  color: transparent;
+  margin-left: 200px;
 }
 .about li::after {
   content: "";
@@ -462,6 +479,7 @@ body {
   position: relative;
   transform-style: preserve-3d;
   border-radius: 18px;
+  transform: perspective(1000px);
 }
 .innre-card a {
   justify-content: center;
