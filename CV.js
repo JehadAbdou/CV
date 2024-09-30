@@ -9,7 +9,7 @@ const projects = document.getElementById("projects");
 const projectsContent = document.getElementById("projects-section");
 const jobs = document.getElementById("jobs");
 const repos = document.getElementById("cards");
-// Initially hide the jobs section
+
 experience.addEventListener("click", () => {
   experienceContent.scrollIntoView();
 });
