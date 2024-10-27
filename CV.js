@@ -24,15 +24,18 @@ projects.addEventListener("click", () => {
 });
 
 fetch("jobs.json")
-  .then((resp) => resp.json())
+  .then((resp) => {
+    if (!resp.ok) throw new Error(`HTTP error! status: ${resp.status}`);
+    return resp.json();
+  })
   .then((data) => {
     data.map((job) => {
       const li = document.createElement("li");
       li.innerText = job.position + " " + job.employer;
       jobs.appendChild(li);
     });
-  });
-
+  })
+  .catch((error) => console.error("Error fetching jobs.json:", error));
 fetch("https://api.github.com/users/JehadAbdou/repos")
   .then((resp) => resp.json())
   .then((data) =>
