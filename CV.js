@@ -23,7 +23,7 @@ projects.addEventListener("click", () => {
   projectsContent.scrollIntoView();
 });
 
-fetch("/cv/newData/jobs.json")
+fetch("/CV/newData/jobs.json")
   .then((resp) => {
     if (!resp.ok) throw new Error(`HTTP error! status: ${resp.status}`);
     return resp.json();
