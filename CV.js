@@ -23,6 +23,7 @@ projects.addEventListener("click", () => {
   projectsContent.scrollIntoView();
 });
 
+// Fetch jobs.json
 fetch("/CV/newData/jobs.json")
   .then((resp) => {
     if (!resp.ok) throw new Error(`HTTP error! status: ${resp.status}`);
@@ -36,6 +37,8 @@ fetch("/CV/newData/jobs.json")
     });
   })
   .catch((error) => console.error("Error fetching jobs.json:", error));
+
+// Fetch GitHub repositories
 fetch("https://api.github.com/users/JehadAbdou/repos")
   .then((resp) => resp.json())
   .then((data) =>
@@ -43,15 +46,10 @@ fetch("https://api.github.com/users/JehadAbdou/repos")
       const li = document.createElement("li");
       li.innerHTML = `<div class=" card ">
             <div class="innre-card">
-              
               <h2>${repo.name}</h2>
-              <a href="${repo.html_url}"
-              ><i class="bx bxl-github"></i
-                ></a>
-                
-              </div>
-            </div>`;
-
+              <a href="${repo.html_url}"><i class="bx bxl-github"></i></a>
+            </div>
+          </div>`;
       repos.appendChild(li);
       VanillaTilt.init(document.querySelectorAll(".card"), {
         glare: true,
