@@ -9,9 +9,11 @@ const projects = document.getElementById("projects");
 const projectsContent = document.getElementById("projects-section");
 const jobs = document.getElementById("jobs");
 const repos = document.getElementById("cards");
-
+let n = 1;
 experience.addEventListener("click", () => {
   experienceContent.scrollIntoView();
+  n -= -1;
+  console.log(n);
 });
 home.addEventListener("click", () => {
   homeContent.scrollIntoView();
@@ -24,7 +26,7 @@ projects.addEventListener("click", () => {
 });
 
 // Fetch jobs.json
-fetch("/CV/newData/jobs.json")
+fetch("./newData/Jobs.json")
   .then((resp) => {
     if (!resp.ok) throw new Error(`HTTP error! status: ${resp.status}`);
     return resp.json();
