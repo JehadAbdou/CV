@@ -1,146 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Jehad Abdou</title>
-    <link
-      rel="stylesheet"
-      href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jehad Abdou | Fullstackutvecklare .NET / React</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
-      <a
-        href=""
-        class="logo"
-        >Jehad.</a
-      >
-
-      <nav class="navbar">
-        <a
-          href="#home"
-          id="home"
-          >Home</a
-        >
-         <a
-          href="#projects"
-          id="projects"
-          >Projects</a
-        >
- <a
-          href="#about"
-          id="about"
-          >About</a
-        >
-        <a
-          href="#experience"
-          id="experience"
-          >Experience</a
-        >
-      </nav>
+      <div class="container nav-wrap">
+        <a class="logo" href="#top">Jehad Abdou</a>
+        <nav class="navbar">
+          <a href="#profile">Profil</a>
+          <a href="#skills">Färdigheter</a>
+          <a href="#education">Utbildning</a>
+          <a href="#experience">Erfarenhet</a>
+          <a href="#projects">Projekt</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
     </header>
 
-    <section
-      class="home"
-      id="home-content">
-      <div class="home-content">
-        <h1>Hi, I,m Jehad Abdou</h1>
-        <h3>SoftWare Engineer</h3>
-        <p>
-          Extremt motiverad att ständigt utveckla mina färdigheter och växa
-          professionellt. Jag är säker på min förmåga att komma med intressanta
-          idéer.
-        </p>
-        <div class="btn-box">
-          <a href="https://www.linkedin.com/in/jehad-abdou-35360520a/"
-            >Hire Me</a
-          >
-          <a href="mailto:jood111ao@hotmail.com">Lets talk</a>
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Fullstackutvecklare .NET / React</p>
+          <h1>Jag bygger skalbara och säkra webblösningar med fokus på kvalitet, säkerhet och användarupplevelse.</h1>
+          <p class="hero-summary">
+            Nyexaminerad fullstackutvecklare med produktionserfarenhet från LIA hos Visma/Spiris. Jag arbetar brett i stacken med .NET 8, ASP.NET Core, React och säkerhetstestning, och jag trivs bäst när jag löser konkreta affärsproblem med rena och hållbara lösningar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="mailto:jood111ao@hotmail.com" onclick="window.location.href='mailto:jood111ao@hotmail.com';">jood111ao@hotmail.com</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/jehad-abdou-35360520a/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+          <ul class="quick-facts">
+            <li><a href="tel:+46760061521" onclick="window.location.href='tel:+46760061521';">📱 076 006 15 21</a></li>
+          </ul>
+
+          <div class="highlights">
+            <article class="highlight-card">
+              <strong>Fullstack</strong>
+              <span>arbetar med både frontend och backend i moderna .NET- och React-lösningar</span>
+            </article>
+            <article class="highlight-card">
+              <strong>Säkerhet</strong>
+              <span>har arbetat med säkerhetsutredning och briståtgärder i verksamhetskritiska system</span>
+            </article>
+            <article class="highlight-card">
+              <strong>Agilt teamarbete</strong>
+              <span>använder GitHub, Jira, Playwright och CI/CD i dagliga arbetsflöden</span>
+            </article>
+          </div>
         </div>
-      </div>
-      <div class="home-sci">
-        <a href="https://www.facebook.com/jehadabdoo2/"
-          ><i class="bx bxl-facebook"></i
-        ></a>
-        <a href="https://www.linkedin.com/in/jehad-abdou-35360520a/"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <a href="https://github.com/JehadAbdou"
-          ><i class="bx bxl-github"></i
-        ></a>
-      </div>
-      <span class="home-imgHover"></span>
-    </section>
-    <section  id="projects-section"
-      class="projects">
-      <h1>Projects</h1>
-      <div class="repos">
-        <ul id="cards" class="cards"> 
-          
-        </ul>
-      </div>
-      
-    </section>
-    <section
-      id="experience-section"
-      class="experince">
-      <div
-        class="erfarenhet"
-        id="erfarenhet">
-        <h1>Experience</h1>
-        <ul id="jobs">
-          
-        </ul>
-      </div>
-    </section>
 
-    <section
-      id="about-section"
-      class="about">
-      <h1>About</h1>
-      <p>
-        <ul>
-          <li>I am a highly motivated and dedicated professional with a passion for
-        continuous learning and self-development. With a diverse educational
-        background in both business management and software engineering, I have
-        honed my skills in a variety of fields. I graduated with a degree in
-        Business Management from Damas University and later pursued
-        Software Engineering at Linnaeus University, complemented by
-        additional studies in C# development and web development at
-        Malmö University and Jönköping University, respectively.</li>
-          <li>Professionally,I bring experience from various roles, including my time as a Study
-        Supervisor where I provided academic support and guidance, helping
-        students with both academic challenges and career advice. My journey in
-        the software development field has allowed me to develop expertise in
-        languages like React, C#, Python, SQL, JavaScript, HTML, and CSS.
-       </li>
-         
-          <li>I am fluent in Swedish, English, and Arabic,
-        and I possess strong interpersonal skills that help me manage both
-        customer and team interactions effectively. I am currently expanding my
-        knowledge in web development while working as a kitchen
-        assistant, where I ensure compliance with health and safety
-        regulations. </li>
-          <li>I am proud of my adaptability, organizational skills,
-        and ability to handle responsibility, making me confident in tackling
-        challenges in both the tech industry and beyond. In my spare time, I
-        enjoy exploring new ideas and continuously seeking out opportunities for
-        both professional and personal growth.</li>
-        </ul>
-        
-        
-      </p>
-    </section>
+        <div class="hero-card tilt-card">
+          <img src="Jehad2-Photoroom.png" alt="Jehad Abdou" />
+          <div class="hero-card__body">
+            <h2>Vad jag bidrar med</h2>
+            <ul>
+              <li>.NET 8, ASP.NET Core och React</li>
+              <li>API-dokumentation, felsökning och säkerhetstestning</li>
+              <li>Agila arbetsflöden med GitHub Actions, Playwright, Jira och GitHub Copilot</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    
- 
+      <section id="profile" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Profil</p>
+          <h2>En teknisk utvecklare med affärsförståelse</h2>
+        </div>
+        <p class="section-copy">
+          Jag är en driven fullstackutvecklare med en bakgrund inom ekonomi och verksamhetsledning, vilket har gett mig en stark förståelse för hur tekniska lösningar ska stödja verkliga verksamhetsbehov. Jag motiveras av kodkvalitet, tydliga processer och att skapa produkter som är både robusta och användarvänliga.
+        </p>
+      </section>
+
+      <section id="skills" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Färdigheter</p>
+          <h2>Tekniska kompetenser</h2>
+        </div>
+        <div class="skill-grid">
+          <article class="skill-card">
+            <h3>Språk</h3>
+            <p><span class="skill-badge">C#</span><span class="skill-badge">TypeScript</span><span class="skill-badge">JavaScript</span><span class="skill-badge">SQL</span><span class="skill-badge">HTML</span><span class="skill-badge">CSS</span><span class="skill-badge">Python</span></p>
+          </article>
+          <article class="skill-card">
+            <h3>Ramverk</h3>
+            <p><span class="skill-badge">.NET 8</span><span class="skill-badge">ASP.NET Core</span><span class="skill-badge">React</span><span class="skill-badge">Knockout.js</span><span class="skill-badge">MediatR</span><span class="skill-badge">Clean Architecture</span></p>
+          </article>
+          <article class="skill-card">
+            <h3>Verktyg</h3>
+            <p><span class="skill-badge">Git/GitHub</span><span class="skill-badge">GitHub Actions</span><span class="skill-badge">Azure DevOps</span><span class="skill-badge">Playwright</span><span class="skill-badge">Burp Suite</span><span class="skill-badge">Jira</span><span class="skill-badge">Scalar</span><span class="skill-badge">n8n</span><span class="skill-badge">GitHub Copilot</span></p>
+          </article>
+          <article class="skill-card">
+            <h3>Moln & data</h3>
+            <p><span class="skill-badge">AWS</span><span class="skill-badge">Azure AI</span><span class="skill-badge">SQL Server</span><span class="skill-badge">Jupyter Notebook</span></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Utbildning</p>
+          <h2>Formell bakgrund</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">2024 – 2026</div>
+            <div class="timeline-content">
+              <h3>Webbutvecklare .NET</h3>
+              <p class="timeline-company">Jönköping University</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">2023 – 2024</div>
+            <div class="timeline-content">
+              <h3>Software Development</h3>
+              <p class="timeline-company">Malmö universitet</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">2018 – 2019</div>
+            <div class="timeline-content">
+              <h3>Software Engineering</h3>
+              <p class="timeline-company">Linnéuniversitetet</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-meta">2010 – 2014</div>
+            <div class="timeline-content">
+              <h3>Ekonomi / Business Management</h3>
+              <p class="timeline-company">Damaskus universitet</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Erfarenhet</p>
+          <h2>Arbetslivserfarenhet</h2>
+        </div>
+        <div id="jobs-list" class="timeline"></div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-heading">
+          <p class="eyebrow">Projekt</p>
+          <h2>Utvalda projekt</h2>
+        </div>
+        <div id="projects-list" class="project-grid"></div>
+      </section>
+
+      <section id="contact" class="section container contact">
+        <div class="section-heading">
+          <p class="eyebrow">Kontakt</p>
+          <h2>Redo för nästa steg?</h2>
+        </div>
+        <p class="section-copy">
+          Jag söker möjligheter där jag kan bidra med teknisk expertis, nyfikenhet och ett starkt samarbete i en produkt- eller utvecklingsmiljö.
+        </p>
+        <div class="hero-actions contact-actions">
+          <a class="btn btn-primary" href="mailto:jood111ao@hotmail.com">Skicka e-post</a>
+          <a class="btn btn-secondary" href="https://github.com/JehadAbdou" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+
     <script src="CV.js"></script>
     <script src="vanilla-tilt.js"></script>
-    
   </body>
 </html>

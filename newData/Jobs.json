@@ -1,37 +1,37 @@
 [
   {
-    "position": "Studiehandledare",
-    "employer": "Böberggymnasite Ånge",
+    "position": "Utvecklare, LIA – Visma/Spiris",
+    "employer": "Visma/Spiris",
     "responsibilities": [
-      "Provide academic support",
-      "Plan and organize student activities",
-      "Offer career and educational counseling",
-      "Manage academic issues"
+      "Migrerade delar av systemet till .NET 8 och ersatte AutoMapper med statiska mappers för bättre prestanda och spårbarhet.",
+      "Identifierade och åtgärdade en säkerhetsbrist i faktureringssystemet med hjälp av Burp Suite.",
+      "Felsökte och rättade buggar rapporterade av kunder samt konfigurerade Scalar för API-dokumentation.",
+      "Arbetade i hela stacken med ASP.NET Core, React och Knockout.js samt agilt med GitHub Actions, Playwright, MediatR och Clean Architecture."
     ],
-    "start_date": "09/2016",
-    "end_date": "06/2017",
-    "employment_type": "Vikariat 100%"
+    "start_date": "Nov 2025",
+    "end_date": "Jun 2026"
   },
-
   {
-    "position": "ArbetsLedare",
-    "employer": "KFC Växjö",
-    "responsibilities": ["Teach MS Office (Word, Excel, PowerPoint, etc.)"],
-    "start_date": "06/2020",
-    "end_date": "05/2023",
-    "employment_type": "100%"
-  },
-
-  {
-    "position": "Team Leadare och Administratör",
+    "position": "Köksbiträde, brickdukning",
     "employer": "Region Kronoberg",
     "responsibilities": [
-      "Ensure kitchen meets all health and safety standards",
-      "Keep work areas and kitchen equipment clean",
-      "Wash dishes and clean up after cooking"
+      "Koordinerade och kvalitetssäkrade portioneringsprocessen för upp till 1 000 patientmåltider dagligen.",
+      "Ansvarade för måltidssammansättning enligt individuella kostrestriktioner och näringsbehov.",
+      "Säkerställde att måltidsservicen följde sjukhusets kvalitets- och hygienstandarder genom systematisk egenkontroll.",
+      "Samarbetade löpande med vårdpersonal för att optimera måltidsupplevelsen för inneliggande patienter."
     ],
-    "start_date": "05/2023",
-    "end_date": "Ongoing",
-    "employment_type": "100%"
+    "start_date": "Maj 2023",
+    "end_date": "Nov 2025"
+  },
+  {
+    "position": "Arbetsledare",
+    "employer": "KFC",
+    "responsibilities": [
+      "Personalansvar, schemaläggning och medarbetarsamtal.",
+      "Budget- och kostnadskontroll samt löpande rapportering.",
+      "Ansvar för säkerhet, hälsa och drift i den dagliga verksamheten."
+    ],
+    "start_date": "Jun 2020",
+    "end_date": "Maj 2023"
   }
 ]
